@@ -11,7 +11,7 @@ body{font-family:'Pretendard', sans-serif; line-height: 1.5; font-size: 1.6rem; 
 }
 
 /* header */
-#header { position: relative; position: absolute; width: 100%; z-index: 2; }
+#header { position: relative; position: fixed; width: 100%; z-index: 2; }
 
 #header .inner { height: 71px; margin-top: 30px; background: #fff; border-radius: 3px; display: flex; justify-content: space-between; align-items: center; max-width: 90%; }
 
@@ -19,13 +19,13 @@ body{font-family:'Pretendard', sans-serif; line-height: 1.5; font-size: 1.6rem; 
 
 #header .inner nav > .gnb { display: flex; justify-content: center; }
 
-#header .inner nav > .gnb > li > a { display: block; padding: 10px 50px; font-size: 2rem; font-family: var(--cafe); }
+#header .inner nav > .gnb > li > a { display: block; padding: 10px 50px; font-size: 2rem; font-family: var(--cafe);}
 
 #header .inner nav > .gnb > li { position: relative; }
 
-#header .inner nav > .gnb > li .depth2 { position: absolute; left: 0%; border: 1px solid #F8B5D5; border-top: 0; top: 120%; text-align: center; background: #fff; width: 100%; transform: scale(0%); transition: all 0.5s; }
+#header .inner nav > .gnb > li .depth2 {opacity: 0; transition: all 0.5s; position: absolute; left: 0%; border: 1px solid #F8B5D5; border-top: 0; top: 120%; text-align: center; background: #fff; width: 100%; transition: all 0.5s; }
 
-#header .inner nav > .gnb > li:hover .depth2 { display: block; transform: scale(100%); }
+#header .inner nav > .gnb > li:hover .depth2 {opacity: 1;}
 
 #header .inner nav > .gnb > li .depth2 li a { padding: 0 0 7px; display: block; }
 
@@ -257,18 +257,18 @@ body{font-family:'Pretendard', sans-serif; line-height: 1.5; font-size: 1.6rem; 
 
 
 
-@keyframes rotate_txt1{
+/* @keyframes rotate_txt1{
   0%{}
   100%{ transform: rotate(360deg);}
 }
 
-#main .main_visual .mv ul .mv2 .rotate_txt2{animation: rotate_txt1 18s infinite linear; background: url('../images/main_rotate2.png')no-repeat center/100%; width: 418px; height: 419px; position: absolute; right: 16.45833333333333vw; top: 39%;}
+#main .main_visual .mv ul .mv2 .rotate_txt1{animation: rotate_txt1 18s infinite linear; background: url('../images/main_rotate2.png')no-repeat center/100%; width: 418px; height: 419px; position: absolute; right: 16.45833333333333vw; top: 39%;} */
 /* mv2 */
 
 
-#main .main_visual .mv .swiper-pagination{bottom: auto; top: 57.7%; background: #F8F1E4; width: 90.1%; left: 5.052083333333333vw;}
+/* #main .main_visual .mv .swiper-pagination{bottom: auto; top: 57.7%; background: #F8F1E4; width: 90.1%; left: 5.052083333333333vw;}
 #main .main_visual .mv .swiper-pagination-progressbar-fill{background:#FFDC9C;}
-
+ */
 
 
 
