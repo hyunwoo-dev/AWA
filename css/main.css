@@ -11,7 +11,7 @@ body{font-family:'Pretendard', sans-serif; line-height: 1.5; font-size: 1.6rem; 
 }
 
 /* header */
-#header { position: relative; position:absolute; width: 100%; z-index: 2; }
+#header { position: relative; position: absolute; width: 100%; z-index: 2; }
 
 #header .inner { height: 71px; margin-top: 30px; background: #fff; border-radius: 3px; display: flex; justify-content: space-between; align-items: center; max-width: 90%; }
 
