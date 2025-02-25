@@ -1,8 +1,8 @@
 const mv = new Swiper('.mv', {
-  pagination: {
+/*   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
+  }, */
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -11,12 +11,13 @@ const mv = new Swiper('.mv', {
   loop: true,
   speed: 1000,
 
-
-  pagination: {
+  effect: "fade",
+  
+/*   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     type: "progressbar",
-  },
+  }, */
 });
 
 
