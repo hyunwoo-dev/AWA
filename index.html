@@ -656,22 +656,26 @@
   </script>
 
 <script>
-/*   let lastScrollY = window.scrollY;
+let lastScrollY = window.scrollY;
 
+// header를 먼저 찾고, 그 안의 .inner를 선택
 const header = document.getElementById('header');
-header.style.transition = 'transform 0.3s ease';
+const inner = header.querySelector('.inner');
+
+inner.style.transition = 'transform 0.3s ease';
 
 window.addEventListener('scroll', () => {
   const currentScrollY = window.scrollY;
 
   if (currentScrollY > lastScrollY && currentScrollY > 50) {
-    header.style.transform = 'translateY(-100%)'; // 아래로 스크롤 시 부드럽게 숨기기
+    inner.style.transform = 'translateY(-150%)'; // 아래로 스크롤 시 숨기기
   } else {
-    header.style.transform = 'translateY(0)'; // 위로 스크롤 시 부드럽게 보이기
+    inner.style.transform = 'translateY(0)'; // 위로 스크롤 시 보이기
   }
 
   lastScrollY = currentScrollY;
-}); */
+});
+
 </script>
 
 </body>
